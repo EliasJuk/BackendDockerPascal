@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  fpc:
+    build: .
+    container_name: fpc_container
+    volumes:
+      - ./src:/usr/src/app
