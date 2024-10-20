@@ -22,8 +22,8 @@ RUN ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime && dpkg-reconfig
 # Criação de diretório de trabalho
 WORKDIR /usr/src/app
 
-# Copiar os arquivos do seu projeto para o contêiner
-COPY . .
+# Copiar os arquivos do projeto da pasta src para o contêiner
+COPY src/hello.pas ./
 
 # Compilar o programa Pascal
 RUN fpc -ohello hello.pas
