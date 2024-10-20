@@ -2,9 +2,15 @@
 
 ``` bash
 #Build da imagem Docker:
-$ docker build -t container_fpc .
+$ docker build -t fpc_container .
 
 #Executar o conteiner:
-$ docker run --rm container_fpc
-$ docker run container_fpc
+$ docker run --rm fpc_container
+$ docker run fpc_container
+
+#Executar em segundo plano
+$ docker compose up -d
+
+#Encerra a execução
+$ docker compose down
 ```
